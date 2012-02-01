@@ -23,24 +23,24 @@ hi CursorLine                                  guibg=#d8d8dd
 hi CursorColumn                                guibg=#e8e8e8
 
 " Diff
-hi DiffAdd          guifg=#003300 guibg=#DDFFDD gui=none
-hi DiffChange                     guibg=#ECECEC gui=none
-hi DiffText         guifg=#000033 guibg=#DDDDFF gui=none
-hi DiffDelete       guifg=#DDCCCC guibg=#FFDDDD gui=none
+hi DiffAdd          guifg=#003300 guibg=#ddffdd gui=none
+hi DiffChange                     guibg=#ececec gui=none
+hi DiffText         guifg=#000033 guibg=#ddddff gui=none
+hi DiffDelete       guifg=#ddcccc guibg=#ffdddd gui=none
 
 " Folding / Line Numbering / Status Lines
-hi Folded           guibg=#ECECEC guifg=#808080 gui=bold
-hi vimFold          guibg=#ECECEC guifg=#808080 gui=bold
-hi FoldColumn       guibg=#ECECEC guifg=#808080 gui=bold
+hi Folded           guibg=#ececec guifg=#808080 gui=bold
+hi vimFold          guibg=#ececec guifg=#808080 gui=bold
+hi FoldColumn       guibg=#ececec guifg=#808080 gui=bold
 
-hi LineNr           guifg=#A0A0A0 guibg=#ECECEC
-hi NonText          guifg=#808080 guibg=#F8F8FF
-hi Folded           guifg=#808080 guibg=#ECECEC gui=bold
-hi FoldeColumn      guifg=#808080 guibg=#ECECEC gui=bold
+hi LineNr           guifg=#aaaaaa guibg=#ececec
+hi NonText          guifg=#808080 guibg=#f8f8ff
+hi Folded           guifg=#808080 guibg=#ececec gui=bold
+hi FoldeColumn      guifg=#808080 guibg=#ececec gui=bold
 
-hi VertSplit        guifg=#DDDDDD guibg=#DDDDDD gui=none
-hi StatusLine       guifg=#404040 guibg=#DDDDDD gui=bold
-hi StatusLineNC     guifg=#404040 guibg=#DDDDDD gui=italic
+hi VertSplit        guifg=#dddddd guibg=#dddddd gui=none
+hi StatusLine       guifg=#404040 guibg=#dddddd gui=bold
+hi StatusLineNC     guifg=#404040 guibg=#dddddd gui=italic
 
 " Misc
 hi ModeMsg          guifg=#990000
@@ -48,51 +48,51 @@ hi MoreMsg          guifg=#990000
 
 hi Title            guifg=#ef5939
 hi WarningMsg       guifg=#ef5939
-hi SpecialKey       guifg=#177F80               gui=italic
+hi SpecialKey       guifg=#177f80               gui=italic
 
-hi MatchParen       guifg=#000000 guibg=#CDCDFD
+hi MatchParen       guifg=#000000 guibg=#cdcdfd
 hi Underlined       guifg=#000000               gui=underline
-hi Directory        guifg=#990000
+hi Directory        guifg=#000000               gui=bold
 
 " Search, Visual, etc
-hi Visual           guifg=#FFFFFF guibg=#3465A4 gui=none
-hi VisualNOS        guifg=#FFFFFF guibg=#204A87 gui=none
-hi IncSearch        guifg=#000000 guibg=#CDCDFD gui=italic
-hi Search           guifg=#000000 guibg=#CDCDFD gui=italic
+hi Visual                         guibg=#b4d5fe gui=none
+hi VisualNOS                      guibg=#b4d5fe gui=none
+hi IncSearch                      guibg=#ffffcc gui=none
+hi Search                         guibg=#ffffcc gui=none
 
 " Syntax groups
 hi Ignore           guifg=#808080
-hi Identifier       guifg=#0086B3
+hi Identifier       guifg=#0086b3
 hi PreProc          guifg=#000000               gui=bold
 hi Comment          guifg=#999988               gui=italic
-hi Constant         guifg=#177F80               gui=none
-hi String           guifg=#D81745 
+hi Constant         guifg=#177f80               gui=none
+hi String           guifg=#d81745 
 hi Function         guifg=#990000               gui=bold
 hi Statement                                    gui=bold
 hi Type             guifg=#445588               gui=bold
-hi Number           guifg=#1C9898
-hi Todo             guifg=#FFFFFF guibg=#990000 gui=bold
+hi Number           guifg=#1c9898
+hi Todo             guifg=#ffffff guibg=#990000 gui=bold
 hi Special          guifg=#159828
-hi Error            guibg=#F8F8FF guifg=#FF1100 gui=undercurl
-hi Todo             guibg=#F8F8FF guifg=#FF1100 gui=underline
+hi Error            guibg=#f8f8ff guifg=#ff1100 gui=undercurl
+hi Todo             guibg=#f8f8ff guifg=#ff1100 gui=underline
 
 " Completion menus
 hi WildMenu         guifg=#7fbdff guibg=#425c78 gui=none
-hi Pmenu            guifg=#FFFFFF guibg=#808080 gui=bold
-hi PmenuSel         guifg=#000000 guibg=#CDCDFD gui=italic
+hi Pmenu            guifg=#ffffff guibg=#808080 gui=bold
+hi PmenuSel         guifg=#000000 guibg=#cdcdfd gui=italic
 hi PmenuSbar        guifg=#444444 guibg=#000000 
-hi PmenuThumb       guifg=#AAAAAA guibg=#AAAAAA 
+hi PmenuThumb       guifg=#aaaaaa guibg=#aaaaaa 
 
 " Tabs
-hi TabLine          guifg=#404040 guibg=#DDDDDD gui=none
-hi TabLineFill      guifg=#404040 guibg=#DDDDDD gui=none
+hi TabLine          guifg=#404040 guibg=#dddddd gui=none
+hi TabLineFill      guifg=#404040 guibg=#dddddd gui=none
 hi TabLineSel       guifg=#404040               gui=bold
 
 " Spelling
-hi spellBad         guisp=#FCAF3E
-hi spellCap         guisp=#73D216
-hi spellRare        guisp=#FCAF3E
-hi spellLocal       guisp=#729FCF
+hi spellBad         guisp=#fcaf3e
+hi spellCap         guisp=#73d216
+hi spellRare        guisp=#fcaf3e
+hi spellLocal       guisp=#729fcf
 
 " Aliases
 hi link cppSTL                Function
@@ -113,21 +113,24 @@ hi link perlSharpBang         Special
 hi link schemeFunc            Statement
 "hi link shSpecialVariables   Constant
 "hi link bashSpecialVariables Constant
-"
+
 " Ruby
 hi rubyConstant         guifg=#008080
-hi rubyRegexpDelimiter  guifg=#009926
-hi rubySymbol           guifg=#960B73
+hi rubyRegexp           guifg=#009926
+hi rubySymbol           guifg=#960b73
 
-hi link rubyAttribute          PreProc
-hi link rubyClass              PreProc
-hi link rubyConditional        PreProc
-hi link rubyInclude            Identifier
-hi link rubyModule             PreProc
-hi link rubyModuleDeclaration  Normal
-hi link rubyPseudoVariable     Identifier
-hi link rubySharpBang          Special
-hi link rubyStringDelimiter    String
+hi link rubyAttribute               PreProc
+hi link rubyClass                   PreProc
+hi link rubyConditional             PreProc
+hi link rubyControl                 PreProc
+hi link rubyInclude                 Identifier
+hi link rubyInterpolationDelimiter  String
+hi link rubyModule                  PreProc
+hi link rubyModuleDeclaration       Normal
+hi link rubyPseudoVariable          Identifier
+hi link rubyRegexpDelimiter         rubyRegexp
+hi link rubySharpBang               Special
+hi link rubyStringDelimiter         String
 
 " Viml
 hi link vimCommentTitle  Comment
