@@ -23,10 +23,10 @@ hi CursorLine                                  guibg=#d8d8dd
 hi CursorColumn                                guibg=#e8e8e8
 
 " Diff
-hi DiffAdd          guifg=#003300 guibg=#ddffdd gui=none
-hi DiffChange                     guibg=#ececec gui=none
-hi DiffText         guifg=#000033 guibg=#ddddff gui=none
-hi DiffDelete       guifg=#ddcccc guibg=#ffdddd gui=none
+hi DiffAdd          guifg=#000000 guibg=#ddffdd gui=none
+hi DiffChange                     guibg=#ddffdd gui=none
+hi DiffText         guifg=#000033 guibg=#aaffaa gui=bold
+hi DiffDelete       guifg=#000000 guibg=#ffdddd gui=none
 
 " Folding / Line Numbering / Status Lines
 hi Folded           guibg=#ececec guifg=#808080 gui=bold
@@ -39,7 +39,7 @@ hi Folded           guifg=#808080 guibg=#ececec gui=bold
 hi FoldeColumn      guifg=#808080 guibg=#ececec gui=bold
 
 hi VertSplit        guifg=#dddddd guibg=#dddddd gui=none
-hi StatusLine       guifg=#404040 guibg=#dddddd gui=bold
+hi StatusLine       guifg=#555555 guibg=#ececec gui=bold
 hi StatusLineNC     guifg=#404040 guibg=#dddddd gui=italic
 
 " Misc
@@ -114,6 +114,12 @@ hi link schemeFunc            Statement
 "hi link shSpecialVariables   Constant
 "hi link bashSpecialVariables Constant
 
+" Diff
+hi DiffLine  guifg=#999999 guibg=#eaf2f5
+
+hi link DiffAdded DiffAdd
+hi link DiffChanged DiffChange
+
 " Ruby
 hi rubyConstant         guifg=#008080
 hi rubyRegexp           guifg=#009926
@@ -150,3 +156,6 @@ hi link vimOption        Identifier
 hi link vimParenSep      Normal
 hi link vimSyntax        Identifier
 hi link vimSynType       Normal
+
+" NERDTree
+hi NERDTreeCWD  guifg=#4183c4
