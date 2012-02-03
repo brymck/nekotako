@@ -1,6 +1,6 @@
 " Vim color file -- nekotako
 " Maintainer:   Bryan McKelvey <bryan.mckelvey@gmail.com>
-" Last Change:  2012 Feb 1
+" Last Change:  2012 Feb 3
 
 set background=light
 hi clear
@@ -15,12 +15,12 @@ endif
 let g:colors_name = "nekotako"
 
 " Generic
-hi Normal                 guifg=#000000 guibg=#ffffff
+hi Normal           guifg=#000000 guibg=#ffffff
 
 " Cursor
-hi Cursor                        guifg=#f8f8ff guibg=#000000 
-hi CursorLine                                  guibg=#d8d8dd
-hi CursorColumn                                guibg=#e8e8e8
+hi Cursor           guifg=#ffffff guibg=#7f7f7f 
+hi CursorLine                     guibg=#b4dffe
+hi CursorColumn                   guibg=#b4dffe
 
 " Diff
 hi DiffAdd          guifg=#000000 guibg=#ddffdd gui=none
@@ -29,14 +29,11 @@ hi DiffText         guifg=#000033 guibg=#aaffaa gui=bold
 hi DiffDelete       guifg=#000000 guibg=#ffdddd gui=none
 
 " Folding / Line Numbering / Status Lines
-hi Folded           guibg=#ececec guifg=#808080 gui=bold
-hi vimFold          guibg=#ececec guifg=#808080 gui=bold
-hi FoldColumn       guibg=#ececec guifg=#808080 gui=bold
-
+hi vimFold          guifg=#808080 guibg=#ececec gui=bold
+hi Folded           guifg=#808080 guibg=#ececec gui=bold
+hi FoldColumn       guifg=#808080 guibg=#ececec gui=bold
 hi LineNr           guifg=#aaaaaa guibg=#ececec
 hi NonText          guifg=#808080 guibg=#f8f8ff
-hi Folded           guifg=#808080 guibg=#ececec gui=bold
-hi FoldeColumn      guifg=#808080 guibg=#ececec gui=bold
 
 hi VertSplit        guifg=#dddddd guibg=#dddddd gui=none
 hi StatusLine       guifg=#555555 guibg=#ececec gui=bold
@@ -47,7 +44,7 @@ hi ModeMsg          guifg=#990000
 hi MoreMsg          guifg=#990000
 
 hi Title            guifg=#ef5939
-hi WarningMsg       guifg=#ef5939
+hi WarningMsg       guifg=#990000
 hi SpecialKey       guifg=#177f80               gui=italic
 
 hi MatchParen       guifg=#000000 guibg=#cdcdfd
@@ -61,27 +58,34 @@ hi IncSearch                      guibg=#ffffcc gui=none
 hi Search                         guibg=#ffffcc gui=none
 
 " Syntax groups
-hi Ignore           guifg=#808080
+hi Comment          guifg=#999999               gui=italic
+hi Conditional      guifg=#000000               gui=bold
 hi Identifier       guifg=#0086b3
+hi Ignore           guifg=#808080
+hi Include          guifg=#999999               gui=bold
+hi PreCondit        guifg=#999999               gui=bold
 hi PreProc          guifg=#000000               gui=bold
-hi Comment          guifg=#999988               gui=italic
-hi Constant         guifg=#177f80               gui=none
-hi String           guifg=#d81745 
+hi Statement        guifg=#000000               gui=bold
+hi StorageClass     guifg=#000000               gui=bold
 hi Function         guifg=#990000               gui=bold
 hi Statement                                    gui=bold
-hi Type             guifg=#445588               gui=bold
-hi Number           guifg=#1c9898
 hi Todo             guifg=#ffffff guibg=#990000 gui=bold
 hi Special          guifg=#159828
 hi Error            guibg=#f8f8ff guifg=#ff1100 gui=undercurl
 hi Todo             guibg=#f8f8ff guifg=#ff1100 gui=underline
 
+" Types
+hi Constant         guifg=#0086b3               gui=none
+hi Number           guifg=#1c9898
+hi String           guifg=#d81745 
+hi Type             guifg=#445588               gui=bold
+
 " Completion menus
-hi WildMenu         guifg=#7fbdff guibg=#425c78 gui=none
-hi Pmenu            guifg=#ffffff guibg=#808080 gui=bold
-hi PmenuSel         guifg=#000000 guibg=#cdcdfd gui=italic
-hi PmenuSbar        guifg=#444444 guibg=#000000 
-hi PmenuThumb       guifg=#aaaaaa guibg=#aaaaaa 
+hi WildMenu         guifg=#ffffff guibg=#4183c4 gui=none
+hi Pmenu            guifg=#000000 guibg=#ffffff gui=none
+hi PmenuSel         guifg=#ffffff guibg=#5061fa gui=none
+hi PmenuSbar        guifg=#444444 guibg=#ffffff 
+hi PmenuThumb       guifg=#7f7f7f guibg=#ffffff 
 
 " Tabs
 hi TabLine          guifg=#404040 guibg=#dddddd gui=none
@@ -97,7 +101,7 @@ hi spellLocal       guisp=#729fcf
 " Aliases
 hi link cppSTL                Function
 hi link cppSTLType            Type
-hi link Character             Number
+hi link Character             String
 hi link htmlTag               htmlEndTag
 "hi link htmlTagName          htmlTag
 hi link htmlLink              Underlined
@@ -120,6 +124,9 @@ hi DiffLine  guifg=#999999 guibg=#eaf2f5
 hi link DiffAdded DiffAdd
 hi link DiffChanged DiffChange
 
+" C
+hi link cDefine Include
+
 " Ruby
 hi rubyConstant         guifg=#008080
 hi rubyRegexp           guifg=#009926
@@ -129,6 +136,7 @@ hi link rubyAttribute               PreProc
 hi link rubyClass                   PreProc
 hi link rubyConditional             PreProc
 hi link rubyControl                 PreProc
+hi link rubyDefine                  PreProc
 hi link rubyInclude                 Identifier
 hi link rubyInterpolationDelimiter  String
 hi link rubyModule                  PreProc
