@@ -22,12 +22,6 @@ hi Cursor           guifg=#ffffff guibg=#7f7f7f
 hi CursorLine                     guibg=#b4dffe
 hi CursorColumn                   guibg=#b4dffe
 
-" Diff
-hi DiffAdd          guifg=#000000 guibg=#ddffdd gui=none
-hi DiffChange                     guibg=#ddffdd gui=none
-hi DiffText         guifg=#000033 guibg=#aaffaa gui=bold
-hi DiffDelete       guifg=#000000 guibg=#ffdddd gui=none
-
 " Folding / Line Numbering / Status Lines
 hi vimFold          guifg=#808080 guibg=#ececec gui=bold
 hi Folded           guifg=#808080 guibg=#ececec gui=bold
@@ -55,7 +49,7 @@ hi Directory        guifg=#000000               gui=bold
 hi Visual                         guibg=#b4d5fe gui=none
 hi VisualNOS                      guibg=#b4d5fe gui=none
 hi IncSearch                      guibg=#ffffcc gui=none
-hi Search                         guibg=#ffffcc gui=none
+hi Search                         guibg=#b4d5fe gui=none
 
 " Syntax groups
 hi Comment          guifg=#999999               gui=italic
@@ -119,10 +113,10 @@ hi link schemeFunc            Statement
 "hi link bashSpecialVariables Constant
 
 " Diff
-hi DiffLine  guifg=#999999 guibg=#eaf2f5
-
-hi link DiffAdded DiffAdd
-hi link DiffChanged DiffChange
+hi diffLine    guifg=#999999 guibg=#eaf2f5
+hi diffAdded   guifg=#4fa01c
+hi diffChanged guifg=#999999
+hi diffRemoved guifg=#c52323
 
 " C
 hi link cDefine Include
